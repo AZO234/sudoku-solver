@@ -6,10 +6,6 @@ import SolverLog   from './components/SolverLog.vue'
 import { useSudokuSolver } from './composables/useSudokuSolver'
 import { useI18n } from './composables/useI18n'
 
-
-
-const baseUrl = import.meta.env.BASE_URL
-
 // ── theme ────────────────────────────────────────────────────────────────────
 const isDark = ref(false)
 watch(isDark, v => document.documentElement.setAttribute('data-theme', v ? 'dark' : 'light'), { immediate: true })
@@ -224,7 +220,7 @@ const statusBarText = computed(() => {
     <!-- ── Topbar ─────────────────────────────────────────────────── -->
     <header class="topbar">
       <div class="topbar__title">
-        <img :src="`${baseUrl}icon.svg`" alt="icon" class="topbar__logo" />
+        <img src="/icon.svg" alt="icon" class="topbar__logo" />
         <div>
           <h1 class="topbar__h1">{{ t.title }}</h1>
           <p class="topbar__sub">{{ t.subtitle }}</p>
