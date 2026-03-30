@@ -5,8 +5,10 @@ import SudokuBoard from './components/SudokuBoard.vue'
 import SolverLog   from './components/SolverLog.vue'
 import { useSudokuSolver } from './composables/useSudokuSolver'
 import { useI18n } from './composables/useI18n'
-import iconUrl from '../public/icon.svg?url'
 
+
+
+const baseUrl = import.meta.env.BASE_URL
 
 // ── theme ────────────────────────────────────────────────────────────────────
 const isDark = ref(false)
@@ -222,7 +224,7 @@ const statusBarText = computed(() => {
     <!-- ── Topbar ─────────────────────────────────────────────────── -->
     <header class="topbar">
       <div class="topbar__title">
-        <img :src="iconUrl" alt="icon" class="topbar__logo" />
+        <img :src="`${baseUrl}icon.svg`" alt="icon" class="topbar__logo" />
         <div>
           <h1 class="topbar__h1">{{ t.title }}</h1>
           <p class="topbar__sub">{{ t.subtitle }}</p>
