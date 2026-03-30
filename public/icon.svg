@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="80" fill="#2d6a4f"/>
+  <!-- 3x3 grid of squares representing sudoku board -->
+  <g fill="none" stroke="white" stroke-width="12">
+    <!-- outer box -->
+    <rect x="60" y="60" width="392" height="392" rx="12"/>
+    <!-- inner 3x3 dividers (thick) -->
+    <line x1="191" y1="60" x2="191" y2="452"/>
+    <line x1="321" y1="60" x2="321" y2="452"/>
+    <line x1="60" y1="191" x2="452" y2="191"/>
+    <line x1="60" y1="321" x2="452" y2="321"/>
+  </g>
+  <!-- thin inner lines -->
+  <g stroke="rgba(255,255,255,0.4)" stroke-width="5">
+    <line x1="104" y1="60" x2="104" y2="452"/>
+    <line x1="147" y1="60" x2="147" y2="452"/>
+    <line x1="234" y1="60" x2="234" y2="452"/>
+    <line x1="278" y1="60" x2="278" y2="452"/>
+    <line x1="364" y1="60" x2="364" y2="452"/>
+    <line x1="408" y1="60" x2="408" y2="452"/>
+    <line x1="60" y1="104" x2="452" y2="104"/>
+    <line x1="60" y1="147" x2="452" y2="147"/>
+    <line x1="60" y1="234" x2="452" y2="234"/>
+    <line x1="60" y1="278" x2="452" y2="278"/>
+    <line x1="60" y1="364" x2="452" y2="364"/>
+    <line x1="60" y1="408" x2="452" y2="408"/>
+  </g>
+  <!-- Sample numbers -->
+  <g font-family="sans-serif" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="central">
+    <text x="125" y="125" font-size="58">5</text>
+    <text x="256" y="256" font-size="58">9</text>
+    <text x="387" y="387" font-size="58">3</text>
+    <text x="387" y="125" font-size="58">7</text>
+    <text x="125" y="387" font-size="58">1</text>
+  </g>
+</svg>
