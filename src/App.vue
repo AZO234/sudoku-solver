@@ -227,6 +227,18 @@ const statusBarText = computed(() => {
         </div>
       </div>
 
+      <div class="sns-bar">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">ポスト</a>
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2FAZO234.github.io%2Fsudoku-solver&layout&size&width=93&height=20&appId" width="93" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://azo234.github.io/sudoku-solver/" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
+        <a href="https://buymeacoffee.com/azo234" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee">
+        </a>
+        <a href="https://github.com/sponsors/azo234" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/static/v1?label=Sponsor&message=❤️&logo=github-sponsors&color=lightgrey&style=for-the-badge" alt="Sponsor ❤️">
+        </a>
+      </div>
+
       <div class="topbar__controls">
         <!-- Language toggle -->
         <button class="ctrl-btn ctrl-btn--lang" @click="toggleLang">
@@ -465,6 +477,12 @@ body {
   font-weight: 300;
   letter-spacing: 0.05em;
 }
+.sns-bar {
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: center; gap: 0.5rem;
+  padding: 0.4rem 0.5rem; margin-bottom: 0.4rem;
+}
+.sns-bar img { display: block; }
 .topbar__controls {
   display: flex;
   align-items: center;
